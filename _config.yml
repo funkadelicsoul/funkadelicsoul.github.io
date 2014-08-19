@@ -1,0 +1,15 @@
+# Site settings
+title: Funkadelic Soul
+email: funkadelicsoul@gmail.com
+description: "Homepage for Front-end Web Developer Mat Frankum"
+baseurl: ""
+author: "Mat Frankum"
+url: "http://funkadelicsoul.com"
+twitter_username: funkadelicsoul
+github_username:  funkadelicsoul
+# Build settings
+markdown: kramdown
+permalink: pretty
+sass:
+    style: :compressed
+exclude: [bower_components, bower.json, node_modules, gulpfile.js, Gemfile, Gemfile.lock, README.md]

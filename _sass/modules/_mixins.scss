@@ -1,0 +1,76 @@
+// Layout
+@mixin no-gutter { 
+	margin: 	0;
+	padding: 	0; 
+}
+
+// Typography
+// @param $adjustment percentage - none | auto | %
+@mixin text-size-adjust($adjustment) {	
+  	@include prefixer(text-size-adjust, $adjustment, webkit moz ms);
+}
+
+@mixin font-size($font-size: 16) {
+	font-size: #{$font-size}px;
+	font-size: #{$font-size / 10}rem;
+}
+
+@mixin fonticons {
+	@include font-face($iconfont-name, $font-dir+$iconfont-name);
+
+	[class^="#{$icon-class}--"]:before, 
+	[class*=" #{$icon-class}--"]:before {
+		display: inline-block;
+		font-family: "#{$iconfont-name}";
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		margin-right: .2em; margin-left: .2em;
+		speak: none;
+		text-transform: none;
+		width: 1em;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	@if length($icon-list) {
+		@each $icon in $icon-list {
+			$iconName: 		#{nth($icon, 1)};
+			$iconContent: 	#{nth($icon, 2)};
+
+			.#{$icon-class}--#{$iconName}:before {
+				content: quote(#{$iconContent});
+			}
+		}
+	}
+}
+
+// Layout
+@mixin logo($name, $width, $height) {
+	background: url(../images/#{$name}.png) no-repeat center center;
+    background-size: #{$width}px #{$height}px;
+    width: #{$width}px; height: #{$height}px;
+}
+
+// Shapes
+// https://gist.github.com/una/7198256
+@mixin circle($size, $bgColor: rgb(17,17,17)) {
+	@if $bgColor != none {
+		background-color: $bgColor;
+	}
+	border-radius: 50%;
+	line-height: $size;
+	@include size($size);
+}
+
+// Miscellaneous
+@mixin opposites($property, $value) {
+	@if $property == text-decoration {
+		@if $value == underline {
+			$value: none;
+		} @else {
+			$value: underline;
+		}
+	}
+	#{$property}: #{$value};
+}

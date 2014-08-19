@@ -1,0 +1,56 @@
+body { font-family: 'Quattrocento Sans', sans-serif; }
+
+h1, h2, h3,
+h4, h5, h6 {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	text-rendering : optimizelegibility;
+	small {
+		font-weight: normal;
+	}
+}
+
+h1, .h1 {
+	@include font-size($basefontsize * 2);
+	line-height: 1.2;
+	margin-bottom: $baselineheight / 2;
+}
+
+h2, .h2 {
+	@include font-size($basefontsize * 1.5);
+	line-height: 1.2;
+	margin-bottom: $baselineheight / 2; 
+}
+
+p, ol, ul,
+dl, address {
+	margin-bottom : $baselineheight;
+	@include font-size($basefontsize);
+	line-height : $baselineheight; 
+}
+
+small { @include font-size($basefontsize / 1); }
+
+.list-unstyled { list-style: none; margin: 0; padding: 0; }
+.list-inline > li { display: inline-block; padding-right: 5px; padding-left: 5px;  }
+
+.note { @include font-size(12);  }
+
+.hide-text { font: 0/0 a; text-shadow: none; color: transparent;  }
+
+a { 
+	color: $linkcolor;
+	text-decoration: $link-text-decoration;
+	outline: none;
+	&:hover {
+		color: $linkhovercolor;
+		@include opposites(text-decoration, $link-text-decoration);
+	}
+	&:focus {
+		color: darken($linkhovercolor, 20);
+		outline: thin dotted;
+	}
+	&:active {
+		@extend a;
+	}
+}

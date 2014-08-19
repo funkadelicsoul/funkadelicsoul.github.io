@@ -1,0 +1,77 @@
+// Logos
+$logoSmall:				fs_logo_compact;
+$logoSmallWidth: 		135;
+$logoSmallHeight:		106;
+$logo:					fs_logo;
+$logoWidth: 			500;
+$logoHeight: 			106;
+
+// Colors
+$bodycolor: 			rgb(255,255,255);
+$textcolor: 			rgb(34,34,34);
+$linkcolor:				rgb(23,119,175);
+$linkhovercolor:		rgb(85,85,85);
+
+// Typography
+$text-size-adjust:	 	100%;
+$basefontsize:			16;
+$baselineheight:		1.5em;
+$link-text-decoration:	underline;
+
+$font-dir:				"/css/font/";
+$iconfont-name:			fontello;
+$icon-class:			icon;
+$icon-list: 			(
+	mail-alt "\e800",
+	//cancel "\e801",
+	//link-ext "\e802",
+	//tag "\e803",
+	//comment "\e804",
+	//comment-empty "\e805",
+	//location "\e806",
+	//menu "\e807",
+	rss "\e808",
+	down-open "\e809",
+	//left-open "\e80a",
+	//right-open "\e80b",
+	up-open "\e80c",
+	//arrows-cw "\e80d",
+	github-circled "\e80e",
+	//facebook "\e80f",
+	//google "\e810",
+	//instagramm "\e811",
+	twitter "\e812",
+	//youtube-play "\e813",
+	//home "\e814",
+	//link "\e815",
+	//vimeo-squared "\e816",
+	//rain "\e817"
+	//clouds "\e818",
+	//snow-heavy "\e819",
+	//windy "\e81a",
+	//sun "\e81b",
+	//mist "\e81c",
+	//moon "\e81d",
+	//sunrise "\e81e",
+	//hail "\e81f",
+	//windy-rain "\e820",
+	//pocket "\e821",
+	//evernote "\e822",
+	//angle-left "\e823",
+	//angle-right "\e824",
+	//angle-up "\e825",
+	//angle-down "\e826",
+	//cw "\e827",
+	codepen "\e828"
+	//videocam "\e829",
+	//camera "\e82a"
+);
+
+// Layout
+// - mobile first
+$break1: 				em(320); 	// 320px = 	20em
+$break2: 				em(480); 	// 480px = 	30em
+$break3: 				em(600);	// 600px = 	37.5
+$break4: 				em(768);	// 768px = 	48em
+$break5: 				em(992);	// 992px = 	62em
+$break6: 				em(1382);	// 1382px = 86.375em

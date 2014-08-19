@@ -1,0 +1,25 @@
+// http://css-tricks.com/things-it-might-be-funuseful-to-try-the-universal-selector-on/
+* { position: relative; vertical-align: baseline; }
+// http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html { @include box-sizing(border-box); }
+*, *:before, *:after { box-sizing: inherit; }
+
+html { 
+	background: $bodycolor;
+	font-size: 62.5%;
+	-webkit-overflow-scrolling: touch;
+	@include text-size-adjust(100%);
+}
+
+body {
+	background-color: transparent;
+	color: $textcolor;
+	@include font-size($basefontsize);
+	@include no-gutter;
+	line-height: $baselineheight;
+	-webkit-font-smoothing: antialiased;
+	width: 100%;
+}
+
+// Clearing
+.clearfix { @include clearfix; }
