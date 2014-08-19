@@ -1,4 +1,4 @@
-/ http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links/
+// http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links/
 // find a scrollable elment
 var $scrollable = (function() {
     var els = ['body','html'],
