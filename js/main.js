@@ -62,10 +62,10 @@ $('a[href*=#]').each(function() {
             // animate to target position
             $scrollable.animate({
                 scrollTop: (hasTarget ? $target.offset().top : 0)
-            }, 800, function() {
+            }, 800/*, function() {
                 // make sure URL is updated and usable
                 location.hash = (hasTarget ? target : '');
-            });
+            }*/);
         });
     }
 });
