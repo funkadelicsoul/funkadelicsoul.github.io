@@ -58,7 +58,9 @@ h2, p { text-align: center; }
 
 .slide__nav { 
     text-align: center;
-    position: absolute; bottom: 45px; left: 50%;
+    position: absolute; bottom: 30px; left: 50%;
+
+    .touch & { bottom: 5px; }
 
     a {
         display: block;
@@ -79,9 +81,11 @@ h2, p { text-align: center; }
         }
 
         &:hover {
-            @include transform(scale(0.93));
-            &:after {
-                @include animation(sonarEffect 1.3s ease-out infinite);
+            .no-touch & {
+                @include transform(scale(0.93));
+                &:after {
+                    @include animation(sonarEffect 1.3s ease-out infinite);
+                }
             }
         }
     }
