@@ -1,0 +1,19 @@
+{
+  "name": "FunkadelicSoul",
+  "version": "7.1.0",
+  "description": "Homepage",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://funkadelicsoul@github.com/funkadelicsoul/funkadelicsoul.github.io.git"
+  },
+  "author": "Mat Frankum",
+  "bugs": {
+    "url": "https://github.com/funkadelicsoul/funkadelicsoul.github.io/issues"
+  },
+  "homepage": "http://funkadelicsoul.com/"
+}
