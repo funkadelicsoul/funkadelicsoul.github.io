@@ -53,7 +53,7 @@ h2, p { text-align: center; }
     box-shadow: 0px 0px 50px 2px #666;
     margin: 0 auto;
     padding: 20px;
-    width: 50%;
+    width: 80%;
 }
 
 .slide__nav { 
@@ -101,11 +101,11 @@ h2, p { text-align: center; }
 
 /*@media (min-width: $break2) {
 
-}
+}*/
 
 @media (min-width: $break3) {
-    
-}*/
+    .slide__content { width: 50%; }
+}
 
 @media (min-width: $break4) {
     .logo__img { @include logo($logo, $logoWidth, $logoHeight) }
