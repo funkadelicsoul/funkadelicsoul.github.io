@@ -21,23 +21,23 @@ body {
 	width: 100%;
 }
 
-body::before {
-	content: '{ "current": "break1" }';
+body:before {
+	content: '{ "current": "break1", "em": "#{$break1}" }';
 	display: none;
 	@include media-query($break2) {
-		content: '{ "current": "break2" }';
+		content: '{ "current": "break2", "em": "#{$break2}" }';
 	};
 	@include media-query($break3) {
-		content: '{ "current": "break3" }';
+		content: '{ "current": "break3", "em": "#{$break3}" }';
 	};
 	@include media-query($break4) {
-		content: '{ "current": "break4" }';
+		content: '{ "current": "break4", "em": "#{$break4}" }';
 	};
 	@include media-query($break5) {
-		content: '{ "current": "break5" }';
+		content: '{ "current": "break5", "em": "#{$break5}" }';
 	};
 	@include media-query($break6) {
-		content: '{ "current": "break6" }';
+		content: '{ "current": "break6", "em": "#{$break6}" }';
 	};
 }
 

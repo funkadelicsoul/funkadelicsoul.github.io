@@ -74,3 +74,19 @@
 	}
 	#{$property}: #{$value};
 }
+
+// Media Queries
+// @param $unit - viewport size
+// @param $query
+// @param $target
+@mixin media-query($unit, $query: min-width, $target: "") {
+	@if $target != "" {
+		@media #{$target} and (#{$query}: #{$unit}) {
+			@content;
+		}
+	} @else {
+		@media (#{$query}: #{$unit}) {
+    		@content;
+    	}
+	}
+}
