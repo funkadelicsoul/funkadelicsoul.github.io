@@ -45,13 +45,6 @@
 	}
 }
 
-// Layout
-@mixin logo($name, $width, $height) {
-	background: url(../images/#{$name}.png) no-repeat center center;
-    background-size: #{$width}px #{$height}px;
-    width: #{$width}px; height: #{$height}px;
-}
-
 // Shapes
 // https://gist.github.com/una/7198256
 @mixin circle($size, $bgColor: rgb(17,17,17)) {
